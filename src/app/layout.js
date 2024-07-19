@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import 'animate.css';
 import "./globals.css";
 import Header from "@/components/Header";
 import Navbar from "@/components/Nav";
@@ -16,8 +17,6 @@ export default function RootLayout({ children }) {
         <Header/>
         <Navbar/>
         {children}
-        
-        
         </body>
     </html>
   );

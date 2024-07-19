@@ -11,7 +11,7 @@ export default function Navbar(){
             <div className="">
             <ul className="flex gap-10 font-bold items-center">
                 <li>
-                    <Link href="#">Home</Link>
+                    <Link href="/">Home</Link>
                 </li>
                 <li>
 
