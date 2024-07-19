@@ -57,6 +57,7 @@
         transform: scale(0.9);
     }
 }
+
 /*  CSS SLIDER */
 .slick-track{
     display: flex !important;
@@ -65,4 +66,8 @@
 
 .slick-prev:before, .slick-next:before {
     color:#cf2e2e !important;
+}
+
+#sortbox:checked ~ #sortboxmenu {
+    opacity: 1;
 }
