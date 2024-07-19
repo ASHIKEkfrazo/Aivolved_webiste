@@ -1,10 +1,12 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { AiOutlineMenu ,AiOutlineFullscreen } from "react-icons/ai";
 
 export default function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [menu, setMenu] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -23,8 +25,9 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex flex-row justify-center pt-3">
-      <div className="container flex justify-around items-center">
+    <>
+    <nav className="  flex-row justify-center pt-3">
+      <div className="hidden md:flex container  justify-around items-center">
         <div className="flex items-center">
           <Image
             src="https://aivolved.in/wp-content/uploads/2022/11/ai-logo.png"
@@ -109,6 +112,41 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
+      <div className="md:hidden w-full flex justify-between">
+      <div className="flex items-center px-5">
+          <Image
+            src="https://aivolved.in/wp-content/uploads/2022/11/ai-logo.png"
+            width={60}
+            height={60}
+            alt="Logo"
+          />
+        </div>
+        <div className="relative flex justify-center items-center px-5 bg-gray-100 rounded-sm cursor-pointer " >
+      
+          {
+            !menu ?  
+            <AiOutlineMenu className="text-3xl" onClick={()=>setMenu(true)} /> : <AiOutlineFullscreen className="text-3xl" onClick={()=>setMenu(false)}>x</AiOutlineFullscreen>
+          }
+           
+        </div>
+
+      </div>
+      
+      {
+          menu ? 
+          <div className="w-full flex justify-end gap-2 text-white px-2 transition-transform duration-500">
+          <div className="w-1/3 bg-text_secondary flex flex-col text-center transform translate-x-0">
+            <Link href="/" className="p-2">Home</Link>
+            <Link className="p-2" href="about">About Us</Link>
+            <Link className="p-2" href="product">Products</Link>
+            <Link className="p-2" href="contact">Contact Us</Link>
+          </div>
+        </div> 
+           :null
+        }
     </nav>
+  
+ 
+    </>
   );
 }
