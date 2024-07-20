@@ -4,13 +4,14 @@ import TypingEffect from './assets/TypingEffect';
 import Banner from './assets/Banner';
 import TabComponent from './assets/TabComponent';
 import BottomSection from './assets/BottomSection';
+import Image from 'next/image';
 
 const Page = () => {
   return (
     <>
       <section className="w-full h-full flex flex-col justify-center hero-video">
         <section className="relative w-full h-[680px] overflow-hidden video-container p-3">
-          <img
+          <Image
             className="absolute w-full h-[680px] top-2 left-0 object-cover"
             src="https://aivolved.in/wp-content/uploads/2024/02/Banner_ai-2.gif"
             alt="Hero Background"

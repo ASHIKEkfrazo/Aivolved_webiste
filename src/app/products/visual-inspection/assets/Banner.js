@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './TypingEffect.module.css';
-
+import Image from 'next/image';
 const Banner = () => {
 
     
@@ -11,7 +11,7 @@ const Banner = () => {
             <h3 className='font-bold text-[2rem] m-2 text-center'>Revolutionizing Quality Control with Cutting-Edge Technology</h3>
 
         <div className={styles.banner}>
-            <img
+            <Image
                 decoding="async"
                 src="https://aivolved.in/wp-content/uploads/2024/06/Aivolved-22-1-1-scaled.jpg"
                 alt="Banner"

@@ -18,7 +18,9 @@ const page = () => {
        <div>
          <section className="relative w-full h-[90vh] overflow-hidden video-container ">
               
-              <Image   className="absolute w-full h-[90vh] top-0 left-0 "
+              <Image   
+              alt=""
+              className="absolute w-full h-[90vh] top-0 left-0 "
                src="https://aivolved.in/wp-content/uploads/2023/11/memphis_1.png"
                  />
               <div className="absolute top-0 left-0 w-full h-full z-10"></div>
@@ -34,6 +36,7 @@ const page = () => {
               </div>
               <div className="flex  rounded-md w-[38%] h-auto">
                 <Image 
+                alt=""
                 className="flex rounded-md w-[600px] h-full"
                 src="https://aivolved.in/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-09-at-12.08.29-PM.jpeg" />
               </div>
@@ -43,9 +46,7 @@ const page = () => {
     </div>
 
     <div className="flex  h-full gap-4 w-[80%] mx-auto">
-    <div className={styles.glutrendPageContainer} className="w-[100%] flex items-end justify-end" >
-
-
+    <div className={`${styles.glutrendPageContainer} w-[100%] flex items-end justify-end`}>
     <Slider {...settings} className="h-full w-[550px] max-w-[600px] mx-8 gap-[.5rem]">
       <div>
         <Image 

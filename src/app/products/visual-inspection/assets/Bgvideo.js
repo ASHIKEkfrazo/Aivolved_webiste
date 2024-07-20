@@ -1,4 +1,6 @@
 
+import Image from "next/image"
+import TypingEffect from "./TypingEffect"
 const Bgvideo = () => {
   return (
     <div>
@@ -11,7 +13,8 @@ const Bgvideo = () => {
                 playsInline
                 muted
               ></video> */}
-              <img   className="absolute w-full h-[550px] top-0 left-0 object-cover md:h-[325px]"
+              <Image   className="absolute w-full h-[550px] top-0 left-0 object-cover md:h-[325px]"
+              alt=""
                src="https://aivolved.in/wp-content/uploads/2024/02/Banner_ai-2.gif"
                  />
               <div className="absolute top-0 left-0 w-full h-full bg-black/20 z-10"></div>
