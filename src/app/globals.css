@@ -69,10 +69,10 @@
 }
 
 /*  CSS SLIDER */
-.slick-track {
+/* .slick-track {
     display: flex !important;
     gap: 2rem;
-}
+} */
 
 .slick-prev:before,
 .slick-next:before {
@@ -81,4 +81,35 @@
 
 #sortbox:checked~#sortboxmenu {
     opacity: 1;
+}
+
+.glutrendPageContainer{
+    width: 100%;
+    height: auto;
+}
+.Slider_glutrendPageContainer{
+    width: 100%;
+    height: auto;
+
+}
+/* .glutrendPageContainer .slick-slider,
+.glutrendPageContainer .slick-slider .slick-list, */
+.glutrendPageContainer .slick-slider .slick-list .slick-track {
+    width: 100%;
+    height: auto;
+    border: 1px solid #000 !important;
+    gap: .5rem !important;
+}
+.glutrendPageContainer .slick-slider .slick-list .slick-track {
+    display: flex !important;
+    gap: .5rem !important;
+}
+
+
+ .slick-next {
+    right: 10px !important;
+}
+.slick-prev {
+    left: 8px !important;
+    z-index: 300;
 }

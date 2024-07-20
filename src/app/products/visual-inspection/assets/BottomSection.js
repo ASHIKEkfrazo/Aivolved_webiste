@@ -4,7 +4,7 @@ const BottomSection = () => {
     {/* row */}
     <div >
         <div className="w-[100%] h-[500px] flex items-center justify-between">
-        <div className="w-[100%] h-full flex flex-col gap-3 items-start justify-center px-8 bg-[#eee] rounded-md">
+        <div className="w-[100%] h-full flex flex-col gap-3 items-start justify-center px-8 bg-[#D8D8D836] rounded-md">
             <div className="text-[2rem] text-[#cf2e2e] font-bold">
             Low Code & Instant Deployment
             </div>
@@ -79,7 +79,7 @@ const BottomSection = () => {
        
         <div className="w-[100%] h-full flex items-center justify-center">
      
-        <div className="w-[100%] h-full flex flex-col gap-3 items-start justify-center px-8 bg-[#eee] rounded-md">
+        <div className="w-[100%] h-full flex flex-col gap-3 items-start justify-center px-8 bg-[#D8D8D836] rounded-md">
             <div className="text-[2rem] text-[#cf2e2e] font-bold">
             Edge-Powered
             </div>
@@ -128,7 +128,7 @@ const BottomSection = () => {
     {/* row */}
     <div >
         <div className="w-[100%] h-[500px] flex items-center justify-between">
-        <div className="w-[100%] h-full flex flex-col gap-3 items-start justify-center px-8 bg-[#eee] rounded-md">
+        <div className="w-[100%] h-full flex flex-col gap-3 items-start justify-center px-8 bg-[#D8D8D836] rounded-md">
             <div className="text-[2rem] text-[#cf2e2e] font-bold">
             Performance At Par
             </div>
@@ -202,7 +202,7 @@ const BottomSection = () => {
        
         <div className="w-[100%] h-full flex items-center justify-center">
      
-        <div className="w-[100%] h-full flex flex-col gap-3 items-start justify-center px-8 bg-[#eee] rounded-md">
+        <div className="w-[100%] h-full flex flex-col gap-3 items-start justify-center px-8 bg-[#D8D8D836] rounded-md">
             <div className="text-[2rem] text-[#cf2e2e] font-bold">
             Ensuring Safety in the Manufacturing Industry with Automated Solutions
             </div>
@@ -247,7 +247,7 @@ const BottomSection = () => {
      <h3 className='font-bold text-[2rem] m-2 p-4 text-center'>Going a step further for robust Quality Control</h3>
 
         <div className="w-[100%] h-[500px] flex items-center justify-between">
-        <div className="w-[100%] h-full flex flex-col gap-3 items-start justify-center px-8 bg-[#eee] rounded-md">
+        <div className="w-[100%] h-full flex flex-col gap-3 items-start justify-center px-8 bg-[#D8D8D836] rounded-md">
             <div className="text-[2rem] text-[#cf2e2e] font-bold">
             Vertical Integration
             </div>
@@ -322,7 +322,7 @@ const BottomSection = () => {
        
         <div className="w-[100%] h-full flex items-center justify-center">
      
-        <div className="w-[100%] h-full flex flex-col gap-3 items-start justify-center px-8 bg-[#eee] rounded-md">
+        <div className="w-[100%] h-full flex flex-col gap-3 items-start justify-center px-8 bg-[#D8D8D836] rounded-md">
             <div className="text-[2rem] text-[#cf2e2e] font-bold">
             Business Integration
             </div>
@@ -365,6 +365,83 @@ const BottomSection = () => {
         </div>
 
 
+    </div>
+
+
+    <div className="my-2">
+    <h3 className='font-bold text-[2rem] m-2 p-4 text-center'>We help you take Corrective Measures</h3>
+
+    <div className="text-[.9rem] text-center color-[#D8D8D836] w-[80%] mx-auto my-2">
+    Cost of Poor Quality can reach up to 15% of a manufacturer’s sales revenue. We aim to reduce this avoidable cost for the global economy by enablling manufacturers to achieve their ZERO-DEFECT target. Achieve significant ROI by reducing inspection costs, rework and scrap, and improving key quality metrics.
+    </div>
+    <div className="text-[1rem] text-[#cf2e2e] text-center font-bold w-[80%] mx-auto my-2">
+            How?
+            </div>
+
+        <div className="flex gap-4 w-[95%] mx-auto my-8">
+        <div className="flex flex-col gap-4 bg-[#D8D8D836] rounded-md p-4 px-8 text-center">
+        <div>
+                image
+            </div>
+            <div className="font-bold text-[1.2rem]">
+                Reduce Wastage and Rework
+            </div>
+            <div className="text-[.9rem]">
+            Reduce wastage and avoidable reworks by capturing defects at their source
+
+            </div>
+    
+
+        </div>
+
+        <div className="flex flex-col gap-4 bg-[#D8D8D836] rounded-md p-4 px-8 text-center">
+        <div>
+                image
+            </div>
+            <div className="font-bold text-[1.2rem]">
+                Reduce Wastage and Rework
+            </div>
+            <div className="text-[.9rem]">
+            Reduce wastage and avoidable reworks by capturing defects at their source
+
+            </div>
+    
+
+        </div>
+
+        <div className="flex flex-col gap-4 bg-[#D8D8D836] rounded-md p-4 px-8 text-center">
+        <div>
+                image
+            </div>
+            <div className="font-bold text-[1.2rem]">
+                Reduce Wastage and Rework
+            </div>
+            <div className="text-[.9rem]">
+            Reduce wastage and avoidable reworks by capturing defects at their source
+
+            </div>
+    
+
+        </div>
+
+        <div className="flex flex-col gap-4 bg-[#D8D8D836] rounded-md p-4 px-8 text-center">
+        <div>
+                image
+            </div>
+            <div className="font-bold text-[1.2rem]">
+                Reduce Wastage and Rework
+            </div>
+            <div className="text-[.9rem]">
+            Reduce wastage and avoidable reworks by capturing defects at their source
+
+            </div>
+    
+
+        </div>
+       
+      
+
+        </div>
     </div>
     </>
   )
