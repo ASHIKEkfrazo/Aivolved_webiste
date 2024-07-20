@@ -3,8 +3,10 @@ import { Carousel } from "antd";
 import Image from "next/image";
 import "animate.css";
 import { useEffect, useState } from "react";
+import Slider  from "../components/Slider"
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState("");
+  const [visible, setVisible] = useState(true);
 
   const handleScroll = () => {
     const position = window.scrollY;
@@ -85,6 +87,30 @@ export default function Home() {
     },
   ]
 
+  const awardArray = [
+    {
+      Image:"https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-copy-6-2.jpg"
+    },
+    {
+      Image:"https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-copy-5-2.jpg"
+    },
+    {
+      Image:"https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-copy-2-2.jpg"
+    },
+    {
+      Image:"https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-2.jpg"
+    },
+    {
+      Image:"https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-copy-8-2.jpg"
+    },
+    {
+      Image:"https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-copy-2-2-1.jpg"
+    },{
+      Image:"https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-copy-7-2.jpg"
+    }
+
+
+  ]
   return (
     <>
       <Carousel autoplay>
@@ -248,38 +274,64 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-[url('https://aivolved.in/wp-content/uploads/2024/05/Untitled-design-92.png')] h-[200px] w-full bg-no-repeat bg-cover bg-fixed bg-center flex justify-center items-center">
-      <div className="container text-white font-bold max-w-[1200px] flex flex-col gap-5 items-start">
-        <h1 className="text-3xl">Ready to join the
-        AI revolution?</h1>
-        <h6>Let's discuss how we can help your business excel in the age of intelligence.</h6>
-        <button className="bg-white text-black py-2 px-5 rounded-md">Contact Us</button>
-      </div>
-            
+        <div className="container text-white font-bold max-w-[1200px] flex flex-col gap-5 items-start">
+          <h1 className="text-3xl">Ready to join the AI revolution?</h1>
+          <h6>
+            Let's discuss how we can help your business excel in the age of
+            intelligence.
+          </h6>
+          <button className="bg-white text-black py-2 px-5 rounded-md">
+            Contact Us
+          </button>
+        </div>
       </div>
       <div className="flex justify-center my-5">
-        <div className="container max-w-[1200px] flex flex-col gap-5 items-center">
+        <div className="flex flex-col gap-5 items-center">
           <div className="flex gap-5 ">
-            <div className="text-3xl border-solid border-[1px] border-[#D8D8D8] p-5 hover:border-sky-500">Our Partners</div>
-            <div className="text-3xl border-solid border-[1px] border-[#D8D8D8] p-5 ">Our Clients</div>
+            <div
+              className={`text-3xl text-text_primary border-solid border-[1px] border-[#D8D8D8] p-3 hover:border-text_secondary ${
+                visible
+                  ? "text-text_secondary border-text_secondary font-bold"
+                  : "text-text_primary"
+              } cursor-pointer  `}
+              onClick={() => setVisible(true)}>
+              Our Partners
+            </div>
+            <div
+              className={`text-3xl text-text_primary border-solid border-[1px] border-[#D8D8D8] p-3 hover:border-text_secondary ${
+                !visible
+                  ? "text-text_secondary border-text_secondary font-bold"
+                  : "text-text_primary"
+              } cursor-pointer  `}
+              onClick={() => setVisible(false)}>
+              Our Clients
+            </div>
           </div>
-          <div className="flex flex-wrap justify-center gap-5">
-
-          {
-            partnerArray.map((img,ind)=>
-            
-              <div key={ind}  className="border-solid border-[1px] border-[#D8D8D8]">
-                <Image src={img.img} width={300} alt="" height={300} />
-              </div>
-            )
-          }
-          </div>
-          {
-            ClientArray.map((img,ind)=>
-              <div key={ind} className="">
-              <Image src={img.img} width={300} alt="" height={300} />
-              </div>
-            )
-          }
+          {visible ? (
+            <div className="flex  justify-center gap-2">
+              {partnerArray.map((img, ind) => (
+                <div
+                  key={ind}
+                  className="border-solid border-[1px] border-[#D8D8D8]">
+                  <Image src={img.img} width={250} alt="" height={250} />
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="flex justify-center gap-5">
+              {ClientArray.map((img, ind) => (
+                <div key={ind} className="">
+                  <Image src={img.img} width={250} alt="" height={250} />
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+      <div className="flex flex-col justify-center items-center gap-10 mt-5">
+        <h1 className="text-3xl text-text_primary">Our Awards</h1>
+        <div className="container max-w-[1200px]">
+<Slider data={awardArray} />
         </div>
       </div>
     </>

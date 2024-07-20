@@ -1,0 +1,257 @@
+/* components/TypingEffect.module.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.52em;
+    text-align: center;
+}
+
+.text {
+    font-weight: 200;
+}
+
+.textSpan {
+    color: #cf2e2e;
+}
+
+/* Hero Video */
+.outter.hero-video {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-video .video-container {
+    height: 550px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.hero-video .bgVideo {
+    object-fit: cover;
+    position: relative;
+    height: 550px;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.hero-video .video-container:after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.hero-video .vText {
+    text-transform: uppercase;
+    margin: 0 0 1rem;
+    padding: 0;
+    line-height: 1;
+    color: white;
+    text-align: center;
+
+
+}
+
+.hero-video .desc {
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.hero-video .callout {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+/* 
+.banner {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    height: 50vh;
+    text-align: center;
+    background: #fff;
+    mix-blend-mode: multiply;
+    transition: background 0.3s ease;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.bannerDesc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner:hover .bannerDesc {
+    opacity: 1;
+    visibility: visible;
+   
+}
+
+.banner:hover img {
+    transform: scale(1.05); 
+    opacity: 0.8;
+}
+
+.bannerContent p {
+    margin: 0 4rem;
+    color: #796d6d;
+    font-size: 1.1rem;
+    text-align: left;
+} */
+
+.banner {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    height: 50vh;
+    text-align: center;
+    background: #fff;
+    mix-blend-mode: multiply;
+    transition: background 0.3s ease;
+}
+
+.banner img {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    /* transform: translateX(20px); */
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.bannerDesc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 0 auto;
+    height: 50vh;
+    text-align: center;
+    color: #796d6d;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner:hover .bannerDesc {
+    opacity: 1;
+    visibility: visible;
+    color: #796d6d;
+
+}
+
+
+
+
+.banner:hover img {
+    width: 100%;
+    /* transform: translateX(0); */
+    /* Shift image horizontally by 20px */
+    opacity: 0.8;
+    /* Optionally change image opacity on hover */
+}
+
+.banner:hover .bannerDesc p {
+    position: relative;
+    /* Ensure positioning for pseudo-elements */
+    padding: 7rem 0;
+    opacity: 1;
+    color: #796d6d;
+    visibility: visible;
+}
+
+/* Using pseudo-elements for custom borders */
+.bannerDesc p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 2px solid #cf2e2e;
+    border-bottom: 2px solid #cf2e2e;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    /* Hide border-right initially */
+    z-index: -1;
+}
+
+.bannerDesc p::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    /* Only show 20px of border-right */
+    height: 100%;
+    border-right: 2px solid #cf2e2e;
+    z-index: -2;
+    /* Ensure it's behind the main content */
+    box-sizing: border-box;
+}
+
+.banner:hover .bannerDesc p::before {
+    border-right: 2px solid #cf2e2e;
+    /* Show border-right on hover */
+}
