@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import Slider from "react-slick";
+import Image from "next/image";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 import styles from "./components/Slider.module.css"
@@ -17,7 +18,7 @@ const page = () => {
        <div>
          <section className="relative w-full h-[90vh] overflow-hidden video-container ">
               
-              <img   className="absolute w-full h-[90vh] top-0 left-0 "
+              <Image   className="absolute w-full h-[90vh] top-0 left-0 "
                src="https://aivolved.in/wp-content/uploads/2023/11/memphis_1.png"
                  />
               <div className="absolute top-0 left-0 w-full h-full z-10"></div>
@@ -32,7 +33,7 @@ const page = () => {
                 </div>
               </div>
               <div className="flex  rounded-md w-[38%] h-auto">
-                <img 
+                <Image 
                 className="flex rounded-md w-[600px] h-full"
                 src="https://aivolved.in/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-09-at-12.08.29-PM.jpeg" />
               </div>
@@ -47,70 +48,70 @@ const page = () => {
 
     <Slider {...settings} className="h-full w-[550px] max-w-[600px] mx-8 gap-[.5rem]">
       <div>
-        <img 
+        <Image 
         className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-18.png"
         alt=""
         />
       </div>
       <div>
-        <img 
+        <Image 
               className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-19.png"
         alt=""
         />
       </div>
       <div>
-        <img 
+        <Image 
                className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-20.png"
         alt=""
         />
       </div>
       <div>
-        <img 
+        <Image 
                className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-21.png"
         alt=""
         />
       </div>
       <div>
-        <img 
+        <Image 
                className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-22.png"
         alt=""
         />
       </div>
       <div>
-        <img 
+        <Image 
                className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-23.png"
         alt=""
         />
       </div>
       <div>
-        <img 
+        <Image 
                className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-24.png"
         alt=""
         />
       </div>
       <div>
-        <img 
+        <Image 
                className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-25.png"
         alt=""
         />
       </div>  
       <div>
-        <img 
+        <Image 
                className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-26.png"
         alt=""
         />
       </div>  
       <div>
-        <img 
+        <Image 
                className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-27.png"
         alt=""
