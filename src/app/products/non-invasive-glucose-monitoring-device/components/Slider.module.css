@@ -1,0 +1,41 @@
+.glutrendPageContainer{
+    width: 100%;
+    height: auto;
+}
+.Slider_glutrendPageContainer{
+    width: 100%;
+    height: auto;
+
+}
+/* .glutrendPageContainer .slick-slider,
+.glutrendPageContainer .slick-slider .slick-list, */
+.glutrendPageContainer .slick-slider .slick-list .slick-track {
+    width: 100%;
+    height: auto;
+    border: 1px solid #000 !important;
+    gap: .5rem !important;
+}
+.glutrendPageContainer .slick-slider .slick-list .slick-track {
+    display: flex !important;
+    gap: .5rem !important;
+}
+.glutrendPageContainer .slick-slider .slick-list .slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.glutrendPageContainer .slick-slider .slick-list .slick-next {
+    right: 14px !important;
+}

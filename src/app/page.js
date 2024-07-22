@@ -8,18 +8,18 @@ export default function Home() {
   const [scrollPosition, setScrollPosition] = useState("");
   const [visible, setVisible] = useState(true);
 
-  const handleScroll = () => {
-    const position = window.scrollY;
-    console.log(position);
-    setScrollPosition(scrollPosition);
-  };
-  useEffect(() => {
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  // const handleScroll = () => {
+  //   const position = window.scrollY;
+  //   console.log(position);
+  //   setScrollPosition(scrollPosition);
+  // };
+  // useEffect(() => {
+  //   handleScroll();
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   const vinCard = [
     {
@@ -315,7 +315,7 @@ export default function Home() {
         <div className="container text-white font-bold max-w-[1200px] flex flex-col gap-5 items-start">
           <h1 className="text-3xl">Ready to join the AI revolution?</h1>
           <h6>
-            Let's discuss how we can help your business excel in the age of
+            Lets discuss how we can help your business excel in the age of
             intelligence.
           </h6>
           <button className="bg-white text-black py-2 px-5 rounded-md">

@@ -75,9 +75,9 @@ export default function Navbar() {
               </label>
               <div
                 id="sortboxmenu"
-                className={`absolute mt-1 right-1 top-full min-w-max shadow rounded ${
+                className={`absolute mt-1 right-1 top-full min-w-max shadow  ${
                   isDropdownOpen ? "opacity-100" : "opacity-0"
-                } bg-white border border-gray-400 transition delay-75 ease-in-out z-10`}
+                } bg-white border border-gray-400 transition delay-75 ease-in-out z-20`}
               >
                 <ul className="block text-right text-gray-900">
                   <li>
