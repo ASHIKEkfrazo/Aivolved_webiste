@@ -3,7 +3,7 @@ import { Carousel } from "antd";
 import Image from "next/image";
 import "animate.css";
 import { useEffect, useState } from "react";
-import Slider  from "../components/Slider"
+import Slider from "../components/Slider";
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState("");
   const [visible, setVisible] = useState(true);
@@ -48,73 +48,85 @@ export default function Home() {
     },
   ];
 
-
-
   const partnerArray = [
     {
-      img:"https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-31.jpg"
+      img: "https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-31.jpg",
     },
     {
-      img:"https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-30.jpg"
+      img: "https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-30.jpg",
     },
     {
-      img:"https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-28.jpg"
+      img: "https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-28.jpg",
     },
     {
-      img:"https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-29.jpg"
+      img: "https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-29.jpg",
     },
     {
-      img:"https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-27.jpg"
+      img: "https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-27.jpg",
     },
     {
-      img:"https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-25.jpg"
+      img: "https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-25.jpg",
     },
     {
-      img:"https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-26.jpg"
+      img: "https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-26.jpg",
     },
-
-  ]
+  ];
 
   const ClientArray = [
     {
-      img:"https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-31.jpg"
+      img: "https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-31.jpg",
     },
     {
-      img:"https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-30.jpg"
+      img: "https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-30.jpg",
     },
     {
-      img:"https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-28.jpg"
+      img: "https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-28.jpg",
     },
-  ]
+  ];
 
   const awardArray = [
     {
-      Image:"https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-copy-6-2.jpg"
+      Image:
+        "https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-copy-6-2.jpg",
     },
     {
-      Image:"https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-copy-5-2.jpg"
+      Image:
+        "https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-copy-5-2.jpg",
     },
     {
-      Image:"https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-copy-2-2.jpg"
+      Image:
+        "https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-copy-2-2.jpg",
     },
     {
-      Image:"https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-2.jpg"
+      Image: "https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-2.jpg",
     },
     {
-      Image:"https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-copy-8-2.jpg"
+      Image:
+        "https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-copy-8-2.jpg",
     },
     {
-      Image:"https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-copy-2-2-1.jpg"
-    },{
-      Image:"https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-copy-7-2.jpg"
-    }
-
-
-  ]
+      Image:
+        "https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-copy-2-2-1.jpg",
+    },
+    {
+      Image:
+        "https://aivolved.in/wp-content/uploads/2024/05/Artboard-1-copy-7-2.jpg",
+    },
+  ];
   return (
     <>
       <Carousel autoplay>
-        <div className="h-full p-10">
+        <div className="h-full p-10 ">
+          <div className="relative h-1/2" style={{ height: "50vh" }}>
+            <Image
+              src="https://aivolved.in/wp-content/uploads/2024/06/Aivolved-06-1-scaled.jpg"
+              alt="Aivolved Image"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+        </div>
+        <div className="h-full p-10 ">
           <div className="relative h-1/2" style={{ height: "50vh" }}>
             <Image
               src="https://aivolved.in/wp-content/uploads/2024/06/Aivolved-06-1-scaled.jpg"
@@ -125,7 +137,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="h-full p-10">
+        <div className="h-full p-10 ">
           <div className="relative h-1/2" style={{ height: "50vh" }}>
             <Image
               src="https://aivolved.in/wp-content/uploads/2024/06/Aivolved-05-scaled.jpg"
@@ -133,9 +145,35 @@ export default function Home() {
               layout="fill"
               objectFit="cover"
             />
+            <Image
+              src="https://aivolved.in/wp-content/uploads/2024/06/Aivolved-20.png"
+              alt="Aivolved Image"
+              layout="fill"
+              objectFit="cover"
+              className=""
+            />
+          </div>
+        </div>
+        <div className="h-full p-10 ">
+          <div className="relative h-1/2" style={{ height: "50vh" }}>
+            <Image
+              src="https://aivolved.in/wp-content/uploads/2024/06/Aivolved-05-scaled.jpg"
+              alt="Aivolved Image"
+              layout="fill"
+              objectFit="cover"
+            />
+            <Image
+              src="https://aivolved.in/wp-content/uploads/2024/06/Aivolved-20.png"
+              alt="Aivolved Image"
+              layout="fill"
+              objectFit="cover"
+              className=""
+            />
           </div>
         </div>
       </Carousel>
+ 
+
       <div className="flex justify-center items-center bg-[#f3f3f3]">
         <div className="container max-w-[1200px] flex flex-col items-center justify-around h-[250px]">
           <h1 className="text-4xl font-normal">
@@ -331,7 +369,7 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center gap-10 mt-5">
         <h1 className="text-3xl text-text_primary">Our Awards</h1>
         <div className="container max-w-[1200px]">
-<Slider data={awardArray} />
+          <Slider data={awardArray} />
         </div>
       </div>
     </>
