@@ -61,7 +61,7 @@ const leaderShipArray = [
             <div className="flex gap-2">
               <ForwardFilled className="text-text_secondary text-2xl" />
               <h1>
-                We're not just keeping pace, we're leading the charge in
+                We’re not just keeping pace, we’re leading the charge in
                 developing cutting-edge AI solutions.
               </h1>
             </div>
