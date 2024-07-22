@@ -30,11 +30,11 @@ const leaderShipArray = [
 
   return (
     <>
-      <div className="bg-[#fbedef] py-16">
-        <h1 className="text-text_secondary font-bold text-4xl px-5">About Us</h1>
+      <div className="bg-[#fbedef] py-10 md:py-15">
+        <h1 className="text-text_secondary font-bold text-4xl px-5 text-center md:text-start">About Us</h1>
       </div>
       <div className="flex justify-center">
-        <div className="container max-w-[1200px] flex flex-col gap-10 my-5 text-text_primary">
+        <div className="container max-w-[1200px] w-full flex flex-col gap-10 my-5 text-text_primary p-5 md:p-0">
           <div className="">
             At AiVolved, we’re not just building AI solutions, we’re building
             the future of intelligent businesses with unparalleled industry
@@ -80,7 +80,7 @@ const leaderShipArray = [
               </h1>
             </div>
           </div>
-          <div className="flex gap-5">
+          <div className="flex gap-5 flex-col md:flex-row">
             <div className="flex items-center">
               <Image
                 src="https://aivolved.in/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-04-at-5.55.55-PM.jpeg"
@@ -120,10 +120,10 @@ const leaderShipArray = [
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-5">
+          <div className="flex flex-col items-center gap-5 text-center md:text-start">
             <h1 className="text-2xl font-bold">Guiding Innovation: Our Leadership Panel</h1>
             <h1 className="">Building a future powered by AI, led by visionary thinkers and industry leaders.</h1>
-            <div className="flex gap-4">
+            <div className="flex gap-4 flex-col md:flex-row">
 {
   leaderShipArray.map((img,ind)=>{
     return (
@@ -150,10 +150,10 @@ const leaderShipArray = [
 
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center gap-5">
+          <div className="flex flex-col justify-center items-center gap-5 text-center md:text-start">
             <h1 className="text-3xl">The Heart of Excellence: Our Dedicated Team </h1>
             <h1>A dynamic team of AI experts united by a common goal: creating groundbreaking AI solutions.</h1>
-            <div className="flex gap-5 justify-center items-center">
+            <div className="flex gap-5 justify-center items-center flex-col md:flex-row">
               <Image src={"https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-25-1.jpg"} className="border-2 border-text_secondary rounded-lg p-0.5" width={500}  height={400} alt="errot_image" />
               <Image src={"https://aivolved.in/wp-content/uploads/2024/06/Artboard-1-copy-24-1.jpg"} className="border-2 border-text_secondary rounded-lg p-0.5"  width={500}  height={400} alt="error_image"/>
             </div>

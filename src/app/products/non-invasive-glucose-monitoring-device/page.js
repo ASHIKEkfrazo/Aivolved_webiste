@@ -22,6 +22,8 @@ const page = () => {
               alt=""
               className="absolute w-full h-[90vh] top-0 left-0 "
                src="https://aivolved.in/wp-content/uploads/2023/11/memphis_1.png"
+               width={500}
+               height={500}
                  />
               <div className="absolute top-0 left-0 w-full h-full z-10"></div>
               <div className="absolute inset-0 flex flex-col justify-center items-center text-center z-10 mx-auto w-3/4 md:w-9/10">
@@ -38,6 +40,8 @@ const page = () => {
                 <Image 
                 alt=""
                 className="flex rounded-md w-[600px] h-full"
+                width={500}
+                height={500}
                 src="https://aivolved.in/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-09-at-12.08.29-PM.jpeg" />
               </div>
               </div>
@@ -52,6 +56,8 @@ const page = () => {
         <Image 
         className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-18.png"
+        width={500}
+        height={500}
         alt=""
         />
       </div>
@@ -59,12 +65,16 @@ const page = () => {
         <Image 
               className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-19.png"
+        width={500}
+        height={500}
         alt=""
         />
       </div>
       <div>
         <Image 
                className="h-full w-[100%]"
+               width={500}
+               height={500}
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-20.png"
         alt=""
         />
@@ -73,6 +83,8 @@ const page = () => {
         <Image 
                className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-21.png"
+        width={500}
+        height={500}
         alt=""
         />
       </div>
@@ -80,6 +92,8 @@ const page = () => {
         <Image 
                className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-22.png"
+        width={500}
+        height={500}
         alt=""
         />
       </div>
@@ -87,6 +101,8 @@ const page = () => {
         <Image 
                className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-23.png"
+        width={500}
+        height={500}
         alt=""
         />
       </div>
@@ -94,6 +110,8 @@ const page = () => {
         <Image 
                className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-24.png"
+        width={500}
+        height={500}
         alt=""
         />
       </div>
@@ -101,6 +119,8 @@ const page = () => {
         <Image 
                className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-25.png"
+        width={500}
+        height={500}
         alt=""
         />
       </div>  
@@ -108,6 +128,8 @@ const page = () => {
         <Image 
                className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-26.png"
+        width={500}
+        height={500}
         alt=""
         />
       </div>  
@@ -115,6 +137,8 @@ const page = () => {
         <Image 
                className="h-full w-[100%]"
         src="https://aivolved.in/wp-content/uploads/2023/11/mobile-27.png"
+        width={500}
+        height={500}
         alt=""
         />
       </div>    

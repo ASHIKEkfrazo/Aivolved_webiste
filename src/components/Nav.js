@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <>
-    <nav className="  flex-row justify-center pt-3">
+    <nav className="  flex-row justify-center pt-3 mb-3">
       <div className="hidden md:flex container  justify-around items-center">
         <div className="flex items-center">
           <Image

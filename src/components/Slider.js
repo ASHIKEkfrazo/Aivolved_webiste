@@ -9,6 +9,32 @@ export default function SimpleSlider({data}) {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ]
   };
   return (
     <Slider {...settings} className="flex justify-center">
@@ -17,7 +43,8 @@ export default function SimpleSlider({data}) {
             data.map((item,ind)=>{
                 return (
       <div key={ind} className="card-slider w-full !flex flex-row justify-center border-2 border-dotted  border-text_secondary  rounded-md ">
-       <Image src={item.Image} alt="Error" width={150} height={150}/>
+       <Image src={item.Image} alt="Error" width={150} height={150} className="!hidden md:flex"/>
+       <Image src={item.Image} alt="Error" width={140} height={140} className="!flex md:hidden"/>
       </div>
                 )
 

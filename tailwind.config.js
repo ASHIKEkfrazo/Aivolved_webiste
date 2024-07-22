@@ -23,7 +23,7 @@ module.exports = {
       colors: {
         text_primary: "#54595f",
         text_secondary: "#cf2e2e",
-        "custom-gray": "rgb(28, 31, 30)", // Define custom gray for borders
+        custom_gray: "rgb(28, 31, 30)", // Define custom gray for borders
       },
       borderWidth: {
         "1": "1px",

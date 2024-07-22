@@ -15,6 +15,8 @@ const Banner = () => {
                 decoding="async"
                 src="https://aivolved.in/wp-content/uploads/2024/06/Aivolved-22-1-1-scaled.jpg"
                 alt="Banner"
+                width={500}
+                height={500}
             />
             <div className={styles.bannerDesc}>
                 <div className={styles.bannerContent}>
